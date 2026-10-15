@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Echoes — the MIET crew that builds things together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <a class="logo" href="#top" aria-label="Echoes MIET home">
+            <img src="images/echoes-miet-logo.png" alt="Echoes MIET logo" />
+            <span>Echoes MIET</span>
+          </a>
+          <div class="links" id="links">
+            <a href="#corners">Find your corner</a
+            ><a href="#happening">What's happening</a
+            ><a href="#wall">The wall</a><a href="#gallery">Moments</a
+            ><a href="#team-history">Team</a>
+          </div>
+          <div class="nr nav-actions">
+            <a class="miet-logo" href="#top" aria-label="MIET home">
+              <img
+                src="images/miet-logo.png"
+                alt="MIET, An Autonomous Institute"
+              />
+            </a>
+            <button class="ico" id="th" aria-label="Theme">◐</button
+            ><a class="btn r" href="#join">Hop in</a
+            ><button class="ico bg" id="bg" aria-label="Menu">≡</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="wrap hg">
+        <div>
+          <span class="note">hey, new here? 👋</span>
+          <h1>The crew at MIET that <u>builds stuff</u> together.</h1>
+          <p>
+            Echoes is a student community for people who like making things:
+            Connections, designs, events, ideas. No gatekeeping. Show up curious
+            and you'll find your people.
+          </p>
+          <div class="cta">
+            <button class="btn r" data-join>Join the crew</button
+            ><a class="btn w" href="#happening">See what we're up to</a>
+          </div>
+          <div class="who">
+            <div class="stack">
+              <b class="avatar avatar-a">A</b><b class="avatar avatar-r">R</b
+              ><b class="avatar avatar-s">S</b
+              ><b class="avatar avatar-more">+</b>
+            </div>
+            <span
+              >Students from every branch and year, hanging out in
+              M-block.</span
+            >
+          </div>
+          <div class="stats" aria-label="Echoes community statistics">
+            <div class="stat">
+              <strong>2,000+</strong>
+              <span>students attended our events</span>
+            </div>
+            <div class="stat">
+              <strong>30+</strong>
+              <span>organiser team members</span>
+            </div>
+            <div class="stat">
+              <strong>15+</strong>
+              <span>events conducted successfully</span>
+            </div>
+          </div>
+        </div>
+        <div class="collage" aria-hidden="true">
+          <div class="tile t1">
+            <small>30th April 2025</small>
+            <b>Hackathon Havoc: 1st-years shipped their first projects</b>
+          </div>
+          <div class="tile t2">
+            <small>say hi</small
+            ><b>"I came for the free chai, stayed for the team."</b>
+          </div>
+          <div class="tile t3">
+            <small>September 2026</small
+            ><b>Auditions are open for every branch</b>
+          </div>
+          <div class="tile t4">
+            <b>100+ of us went to HCL Noida together</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker"><div id="tk"></div></div>
+
+    <section id="corners">
+      <div class="wrap rv">
+        <span class="note">pick a vibe</span>
+        <h2>Find your corner.</h2>
+        <p class="sub">
+          Everyone starts somewhere. Tap the one that sounds like you and we'll
+          connect you with the people already in it.
+        </p>
+        <div class="cg" id="cg"></div>
+      </div>
+    </section>
+
+    <section id="happening" class="section-compact">
+      <div class="wrap rv">
+        <span class="note">pull up a chair</span>
+        <h2>What's happening.</h2>
+        <p class="sub">
+          What's on now, and a look back at the stuff we've done together.
+        </p>
+        <div class="hap">
+          <div class="next">
+            <span class="pill">12 Oct 2026</span>
+            <h3>Smriti 2.0: learn from a MIET alumna.</h3>
+            <p>
+              Join Ms. Neha Singh, MIET alumna (2011–15) and Manager at Coforge,
+              at Raman Block Audi 3. She has previously worked with Google,
+              Wipro and EY.
+            </p>
+          </div>
+          <div>
+            <div class="tl" id="tl"></div>
+            <button class="btn w show-events" id="show-events" type="button">
+              Show more events
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wall" id="wall">
+      <div class="wrap rv">
+        <span class="note note-dark-red">your turn ✍️</span>
+        <h2>The wall.</h2>
+        <p class="sub">
+          Leave a shout-out, an idea for the next event, or just say what you're
+          building. Everyone can see it.
+        </p>
+        <form class="wf" id="wf">
+          <input
+            name="name"
+            placeholder="Your name"
+            required
+            maxlength="30"
+          /><input
+            class="msg"
+            name="text"
+            placeholder="What's on your mind?"
+            required
+            maxlength="160"
+          /><button class="btn r" type="submit">Pin it</button>
+        </form>
+        <div class="ok" id="ok" role="status"></div>
+        <div class="notes" id="notes"></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="wrap rv">
+        <span class="note">good times</span>
+        <h2>Moments.</h2>
+        <p class="sub">
+          Placeholder tiles for now. Event photos get pinned here once uploaded.
+        </p>
+        <div class="gal" id="gal"></div>
+      </div>
+    </section>
+
+    <section class="section-no-top-padding">
+      <div class="wrap rv">
+        <h2 class="heading-small">Backed by people who believe in students.</h2>
+        <div
+          class="leadership-grid institutional-leadership"
+          aria-label="MIET leadership"
+        >
+          <article class="leadership-card">
+            <div class="leadership-photo chairman-photo">
+              <img
+                src="images/chairman.jpeg"
+                alt="Shri Vishnu Saran, Chairman of MIET"
+              />
+              <span aria-hidden="true">VS</span>
+            </div>
+            <span class="person-role">Chairman, MIET</span>
+            <h3>Shri Vishnu Saran</h3>
+            <span class="leadership-tenure">MIET leadership</span>
+          </article>
+          <article class="leadership-card">
+            <div class="leadership-photo">
+              <span aria-hidden="true">GA</span>
+            </div>
+            <span class="person-role">Vice-Chairman, MIET</span>
+            <h3>Shri Gaurav Aggarwal</h3>
+            <span class="leadership-tenure">MIET leadership</span>
+          </article>
+          <article class="leadership-card">
+            <div class="leadership-photo">
+              <img
+                src="images/director.webp"
+                alt="Prof. (Dr.) S.K. Singh, Director of MIET"
+              />
+              <span aria-hidden="true">SKS</span>
+            </div>
+            <span class="person-role">Director, MIET</span>
+            <h3>Prof. (Dr.) S.K. Singh</h3>
+            <span class="leadership-tenure">MIET leadership</span>
+          </article>
+          <article class="leadership-card">
+            <div class="leadership-photo">
+              <img
+                src="images/hod.jpeg"
+                alt="Dr. Vikas Srivastava, HOD of CSE"
+              />
+              <span aria-hidden="true">VS</span>
+            </div>
+            <span class="person-role">HOD, CSE</span>
+            <h3>Dr. Vikas Srivastava</h3>
+            <span class="leadership-tenure">CSE Department</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap rv">
+        <span class="note">the people behind Echoes</span>
+        <h2>Meet the team.</h2>
+        <p class="sub">
+          Echoes is built by students who bring ideas, energy and care to every
+          event.
+        </p>
+        <div class="founder-spotlight">
+          <div class="founder-story">
+            <span class="person-role">The Echoes spirit</span>
+            <h3>Curious minds. Kind hearts. Bold ideas.</h3>
+            <p>
+              Echoes grows through people who listen first, learn together and
+              make room for every voice. Our team brings a warm, creative energy
+              to every project and event.
+            </p>
+            <span class="story-signoff">Built with courage and chai.</span>
+          </div>
+          <div class="founder-card">
+            <div class="founder-photo">
+              <img
+                src="images/mohini-sharma.jpg"
+                alt="Mohini Sharma"
+                onerror="this.hidden = true"
+              />
+              <span aria-hidden="true">MS</span>
+            </div>
+            <h3>Mohini Sharma</h3>
+            <p>Lead &amp; Founder of Echoes MIET</p>
+            <span class="founder-tenure">Lead tenure: 2024–25</span>
+          </div>
+        </div>
+        <section
+          class="senior-memories"
+          aria-labelledby="senior-memories-heading"
+        >
+          <span class="note">with gratitude</span>
+          <h3 id="senior-memories-heading">Senior leadership memories</h3>
+          <p class="sub">
+            Celebrating the presidents and vice presidents whose contributions
+            helped Echoes grow.
+          </p>
+          <div class="senior-memory-grid" id="senior-memories"></div>
+        </section>
+        <div class="leadership-grid" aria-label="Echoes leadership">
+          <article class="leadership-card">
+            <div class="leadership-photo">
+              <img
+                src="images/priyanka-mam.webp"
+                alt="Priyanka, Faculty Coordinator"
+                onerror="this.hidden = true"
+              />
+              <span aria-hidden="true">PM</span>
+            </div>
+            <span class="person-role">Faculty Coordinator</span>
+            <h3>Priyanka Dhanraj</h3>
+            <span class="leadership-tenure">Tenure: 2026–27</span>
+          </article>
+          <article class="leadership-card">
+            <div class="leadership-photo">
+              <img
+                src="images/avinash-kumar-baliyan.jpeg"
+                alt="Avinash Kumar Baliyan"
+                onerror="this.hidden = true"
+              />
+              <span aria-hidden="true">AKB</span>
+            </div>
+            <span class="person-role">President</span>
+            <h3>Avinash Kumar Baliyan</h3>
+            <span class="leadership-tenure">Tenure: 2026–27</span>
+          </article>
+          <article class="leadership-card">
+            <div class="leadership-photo">
+              <img
+                src="images/vice-president.jpeg"
+                alt="Pritika Singh"
+                onerror="this.hidden = true"
+              />
+              <span aria-hidden="true">PS</span>
+            </div>
+            <span class="person-role">Vice President</span>
+            <h3>Pritika Singh</h3>
+            <span class="leadership-tenure">Tenure: 2026–27</span>
+          </article>
+        </div>
+        <h3 class="team-group-title core-team-heading">Core Team 2026–27</h3>
+        <div class="team-grid" id="team-grid"></div>
+        <div class="team-volunteer-section" aria-labelledby="volunteer-heading">
+          <h4 id="volunteer-heading" class="team-group-subtitle">
+            Volunteer 2026–27
+          </h4>
+          <div class="volunteer-belt" aria-label="Volunteers 2026–27">
+            <button
+              class="volunteer-nav volunteer-prev"
+              type="button"
+              aria-label="Show previous volunteers"
+            >
+              ‹
+            </button>
+            <div class="volunteer-track">
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo anushka-rathi-photo">
+                  <img src="images/anushka-rathi.jpeg" alt="Anushka Rathi" />
+                </div>
+                <strong>Anushka Rathi</strong>
+                <small>Graphics Design Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo anushka-garg-photo">
+                  <img src="images/anushka-garg.jpeg" alt="Anushka Garg" />
+                </div>
+                <strong>Anushka Garg</strong>
+                <small>Graphics Design Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo lovesh-photo">
+                  <img src="images/lovesh-sembhal.jpeg" alt="Lovesh Semwal" />
+                </div>
+                <strong>Lovesh Semwal</strong>
+                <small>Content Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo shreya-photo">
+                  <img src="images/shreya-singh.jpeg" alt="Shreya Singh" />
+                </div>
+                <strong>Shreya Singh</strong>
+                <small>Visual Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo rishabh-photo">
+                  <img src="images/rishabh-kumar.jpeg" alt="Rishabh Kumar" />
+                </div>
+                <strong>Rishabh Kumar</strong>
+                <small>Visual Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo mushan-photo">
+                  <img src="images/mushan-fir.jpeg" alt="Muskan" />
+                </div>
+                <strong>Muskan</strong>
+                <small>Social Media Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo krish-photo">
+                  <img src="images/krish-niwati.jpeg" alt="Krish Niwati" />
+                </div>
+                <strong>Krish Niwati</strong>
+                <small>Visual Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo saransh-photo">
+                  <img src="images/saransh-singh.jpeg" alt="Saransh Singh" />
+                </div>
+                <strong>Saransh Singh</strong>
+                <small>PR and Outreach Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo akshara-photo">
+                  <img
+                    src="images/akshara-aggarwal.jpeg"
+                    alt="Akshara Aggarwal"
+                  />
+                </div>
+                <strong>Akshara Aggarwal</strong>
+                <small>Event Management Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo utkarsh-photo">
+                  <img src="images/utkarsh-ruhela.jpeg" alt="Utkarsh Ruhela" />
+                </div>
+                <strong>Utkarsh Ruhela</strong>
+                <small>Technical Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo anshika-photo">
+                  <img
+                    src="images/anshika-kaushik.jpeg"
+                    alt="Anshika Kaushik"
+                  />
+                </div>
+                <strong>Anshika Kaushik</strong>
+                <small>Content Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo yash-singhal-photo">
+                  <img src="images/yash-singhal.jpeg" alt="Yash Singhal" />
+                </div>
+                <strong>Yash Singhal</strong>
+                <small>Event Management Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo anushka-rathi-photo">
+                  <img src="images/anushka-rathi.jpeg" alt="Anushka Rathi" />
+                </div>
+                <strong>Anushka Rathi</strong>
+                <small>Graphics Design Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo anushka-garg-photo">
+                  <img src="images/anushka-garg.jpeg" alt="Anushka Garg" />
+                </div>
+                <strong>Anushka Garg</strong>
+                <small>Graphics Design Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo lovesh-photo">
+                  <img src="images/lovesh-sembhal.jpeg" alt="Lovesh Semwal" />
+                </div>
+                <strong>Lovesh Semwal</strong>
+                <small>Content Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo shreya-photo">
+                  <img src="images/shreya-singh.jpeg" alt="Shreya Singh" />
+                </div>
+                <strong>Shreya Singh</strong>
+                <small>Visual Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo rishabh-photo">
+                  <img src="images/rishabh-kumar.jpeg" alt="Rishabh Kumar" />
+                </div>
+                <strong>Rishabh Kumar</strong>
+                <small>Visual Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo mushan-photo">
+                  <img src="images/mushan-fir.jpeg" alt="Muskan" />
+                </div>
+                <strong>Muskan</strong>
+                <small>Social Media Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo krish-photo">
+                  <img src="images/krish-niwati.jpeg" alt="Krish Niwati" />
+                </div>
+                <strong>Krish Niwati</strong>
+                <small>Visual Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo saransh-photo">
+                  <img src="images/saransh-singh.jpeg" alt="Saransh Singh" />
+                </div>
+                <strong>Saransh Singh</strong>
+                <small>PR and Outreach Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo akshara-photo">
+                  <img
+                    src="images/akshara-aggarwal.jpeg"
+                    alt="Akshara Aggarwal"
+                  />
+                </div>
+                <strong>Akshara Aggarwal</strong>
+                <small>Event Management Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo utkarsh-photo">
+                  <img src="images/utkarsh-ruhela.jpeg" alt="Utkarsh Ruhela" />
+                </div>
+                <strong>Utkarsh Ruhela</strong>
+                <small>Technical Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo anshika-photo">
+                  <img
+                    src="images/anshika-kaushik.jpeg"
+                    alt="Anshika Kaushik"
+                  />
+                </div>
+                <strong>Anshika Kaushik</strong>
+                <small>Content Team</small>
+              </article>
+              <article class="volunteer-card">
+                <div class="person-avatar volunteer-photo yash-singhal-photo">
+                  <img src="images/yash-singhal.jpeg" alt="Yash Singhal" />
+                </div>
+                <strong>Yash Singhal</strong>
+                <small>Event Management Team</small>
+              </article>
+            </div>
+            <button
+              class="volunteer-nav volunteer-next"
+              type="button"
+              aria-label="Show next volunteers"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team-history">
+      <div class="wrap rv">
+        <span class="note">our changing crew</span>
+        <h2>Echoes teams.</h2>
+        <p class="sub">
+          Explore the people who carried the Echoes spirit forward in earlier
+          academic years.
+        </p>
+        <div class="team-years" role="tablist" aria-label="Echoes team years">
+          <button
+            class="team-year active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-team-year="2025-26"
+          >
+            Team 2025–26
+          </button>
+          <button
+            class="team-year"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            data-team-year="2024-25"
+          >
+            Team 2024–25
+          </button>
+        </div>
+        <div class="team-history-grid" id="team-history-grid"></div>
+      </div>
+    </section>
+
+    <section id="join" class="section-compact">
+      <div class="wrap">
+        <div class="jn">
+          <span class="note note-yellow">ready?</span>
+          <h2>Come hang out. Stay and build.</h2>
+          <p>
+            Auditions take five minutes. We'll reach out and put you with a
+            team.
+          </p>
+          <button class="btn" data-join>Join Echoes</button>
+          <div class="soc">
+            <a
+              href="https://www.instagram.com/echoes_miet"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            ><a
+              href="https://chat.whatsapp.com/GALFsiK782O6XidEtD9LFB"
+              target="_blank"
+              rel="noopener"
+              >WhatsApp group</a
+            ><a
+              href="https://www.linkedin.com/company/echoes-miet/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            ><a href="https://x.com/Echoes_MIET" target="_blank" rel="noopener"
+              >X</a
+            ><a href="mailto:echoesofcse@miet.ac.in">Email us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <footer class="f">
+        <span>Echoes M.I.E.T · M-block, MIET, NH-58, Meerut</span
+        ><a href="#" id="inl" hidden>Open inbox</a>
+      </footer>
+    </div>
+    <dialog id="dlg"><div id="db"></div></dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
